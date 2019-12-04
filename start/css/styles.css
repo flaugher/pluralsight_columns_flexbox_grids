@@ -207,6 +207,9 @@ main {
   max-width: 60rem;
   min-height: 20rem;
   /*  ------------- COLUMN LAYOUT -------------  */
+  /* The idea is that to create n columns in any row, the number i which you
+     specify in your CSS solves the equation 12/n = i. So if you want 3 columns
+     for medium width screens, you would specify 'medium-4' because 12/4 = 3. */
 }
 main h1 {
   font-size: 2rem;

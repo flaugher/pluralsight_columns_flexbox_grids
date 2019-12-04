@@ -139,6 +139,9 @@ main {
     .column {
         padding: 0 $gutter;         // All columns have padding to separate them from each other
     }
+    /* The idea is that to create n columns in any row, the number i which you
+       specify in your CSS solves the equation 12/n = i. So if you want 3 columns
+       for medium width screens, you would specify 'medium-4' because 12/4 = 3. */
     @for $i from 1 through 12 {     // Lay out 12-column grid.
         $w: ($i / 12) * 100%;       // $w stands for width.
         .small-#{$i} {              // Use variable interpolation to create a class.
