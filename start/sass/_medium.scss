@@ -1,0 +1,38 @@
+/*-----HEADER SOCIAL ICONS-----*/
+header {
+    position: relative;     // To position icons absolute, we have to position
+                            // their container relative.
+    ul.social {
+        position: absolute;
+        bottom: .5rem;      // Make bottom half-rem up
+        right: $gutter;
+    }
+    ul.social li {
+        width: auto;        // Make sure it works correct everywhere.
+    }
+
+
+
+
+
+
+} // end header
+
+/*  ------------- MAIN -------------  */
+main {
+
+    /*  ------------- COLUMN LAYOUT -------------  */
+    // Neither the row nor column will change.
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {
+            width: $w;
+            float: left;
+        }
+    }
+
+
+
+} // end main
+
+
