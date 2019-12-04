@@ -132,6 +132,12 @@ main {
     } // end h1
     h2 { padding-top: 1rem; }
 
+    figure {
+        width: 33%;                 // 33% is width of the container.
+        float: right;
+     }
+     figure img { width: 100%; }    // Must do this too.
+
     /*  ------------- COLUMN LAYOUT -------------  */
     .row {
         clear: both;                // All rows need to clear everything above them.
