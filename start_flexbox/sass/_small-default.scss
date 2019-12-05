@@ -102,9 +102,33 @@ main {
 
     div.container1 div {
         -ms-flexbasis: 100%;
+        padding: 1rem $gutter;
         flex-basis: 100%;
+        align-items: stretch;
+
+        background-color: #eee;
+        border: solid 1px #bbb;
     }
 
+    div.container2 {
+        display: -ms-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;                // Wrap content so it doesn't go off the side of the screen.
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    div.container2 figure {
+        flex-basis: 25%;
+        padding: 1rem $gutter;
+        transition: transform 0.3s ease-in-out;     // Required for special hover effect below.
+    }
+
+    div.container2 figure:hover {
+        transform: scale(1.05);                     // Add special effect.
+    }
 
 
 
