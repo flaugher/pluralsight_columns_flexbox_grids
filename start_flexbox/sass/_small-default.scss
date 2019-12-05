@@ -38,7 +38,7 @@ header {
 
 /*  ------------- NAV -------------  */
 nav {
-
+    @include gradient($secondaryColor, darken($secondaryColor, 20%));    // Include mixin from variables.scss.
 	border-bottom:1px solid rgba(0,0,0,0.3);
     ul {
         display: flex;                                      // Display parent container as a flexbox. IE: -ms-flexbox
