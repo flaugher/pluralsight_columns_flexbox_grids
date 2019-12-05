@@ -1,10 +1,15 @@
 /*  ------------- MAIN -------------  */
 main {
+    div.container1 div {
+        -ms-flex: 46%;              // Allow for gutter.
+        flex-basis: 50%;            // Creates two columns.
+    }
 
-    
-    
-    
-    
+
+
+
+
+
 } // end main
 
 

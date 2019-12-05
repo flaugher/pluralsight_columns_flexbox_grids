@@ -17,6 +17,11 @@ nav {
 
 /*  ------------- MAIN -------------  */
 main {
+    div.container1 div {
+        -ms-flex: 29.333%;              // Allow for gutter.
+        flex-basis: 33.333%;            // Creates two columns.
+    }
+
 
 
 

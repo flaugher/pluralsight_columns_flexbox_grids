@@ -91,7 +91,19 @@ main {
 
 	p {
 		line-height: 130%;
-	} // end p
+    } // end p
+
+    div.container1 {
+        display: -ms-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;                // Allow wrapping.
+        flex-wrap: wrap;
+    }
+
+    div.container1 div {
+        -ms-flexbasis: 100%;
+        flex-basis: 100%;
+    }
 
 
 

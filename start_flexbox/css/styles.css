@@ -190,6 +190,16 @@ main h2 {
 main p {
   line-height: 130%;
 }
+main div.container1 {
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+main div.container1 div {
+  -ms-flexbasis: 100%;
+  flex-basis: 100%;
+}
 
 /*  ------------- FOOTER -------------  */
 footer {
@@ -215,6 +225,10 @@ footer p a {
 
 @media only screen and (min-width: 35em) {
   /*  ------------- MAIN -------------  */
+  main div.container1 div {
+    -ms-flex: 46%;
+    flex-basis: 50%;
+  }
 }
 @media only screen and (min-width: 64em) {
   /*  ------------- NAV -------------  */
@@ -234,4 +248,8 @@ footer p a {
   }
 
   /*  ------------- MAIN -------------  */
+  main div.container1 div {
+    -ms-flex: 29.333%;
+    flex-basis: 33.333%;
+  }
 }
